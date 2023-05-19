@@ -28,7 +28,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $FINAL = $res / ($cdcom + $newcd);
     $CGPA = round($FINAL, 2);
     $FINAL_CGPA = number_format($CGPA, 2);
-
-    echo "Your CGPA is $FINAL_CGPA!";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+</head>
+<body>
+    <h1>CGPA Calculator</h1>
+    <div>
+        <h2>Result</h2>
+        <p>Your CGPA is <?php echo $FINAL_CGPA; ?>!</p>
+    </div>
+</body>
+</html>
+<?php
 }
 ?>
