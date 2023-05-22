@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>CGPA Calculator</title>
+</head>
+
+<body>
+    <h1>CGPA Calculator</h1>
+    <form>
+        <div>
+            <label for="cdcom">Credit Completed:</label>
+            <input type="number" id="cdcom" name="cdcom" required>
+        </div>
+        <div>
+            <label for="oldcgpa">Current CGPA:</label>
+            <input type="number" step="0.01" id="oldcgpa" name="oldcgpa" required>
+        </div>
+        <h2>GPA for 4 Courses</h2>
+
+        <div>
+            <label for="c1_gpa">Course 1 GPA:</label>
+            <input type="number" step="0.01" id="c1_gpa" name="c1_gpa" required>
+        </div>
+
+        <div>
+            <label for="c2_gpa">Course 2 GPA:</label>
+            <input type="number" step="0.01" id="c2_gpa" name="c2_gpa" required>
+        </div>
+
+        <div>
+            <label for="c3_gpa">Course 3 GPA:</label>
+            <input type="number" step="0.01" id="c3_gpa" name="c3_gpa" required>
+        </div>
+
+        <div>
+            <label for="c4_gpa">Course 4 GPA:</label>
+            <input type="number" step="0.01" id="c4_gpa" name="c4_gpa" required>
+        </div>
+
+            <button type="submit" id="calculateButton">Calculate CGPA</button>
+
+    </form>
+
+    <div class="center-button">
+        <div class="box" id="resultBox">
+            <p id="resultText"></p>
+            <a href="index.html"><button type="submitt">Start Over</button></a>
+        </div>
+    </div>
+
+    <script src="cgpa_calculator.js"></script>
+</body>
+
+</html>
